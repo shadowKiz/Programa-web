@@ -2,256 +2,475 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-  <link href="css/Menu-bar.css" rel="stylesheet" type="text/css">
-  <link href="css/banner.css" rel="stylesheet" type="text/css">
-  <link href="css/sle.css" rel="stylesheet" type="text/css">
-  <link href="css/slider-productos.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link href="css/Menu-bar.css" rel="stylesheet" type="text/css">
+    <link href="css/banner.css" rel="stylesheet" type="text/css">
+    <link href="css/sle.css" rel="stylesheet" type="text/css">
+    <link href="css/slider-productos.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
 
 
 
-  <title>ALL Over</title>
+    <title>ALL Over</title>
 </head>
 
 <body>
-  <!--   //menu de navegacion -->
-  <nav class="menu" id="menu">
-    <div class="contenedor contenedor-botones-menu">
+    <!--   //menu de navegacion -->
+    <nav class="menu" id="menu">
+        <div class="contenedor contenedor-botones-menu">
 
-      <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
-      <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
-    </div>
-
-
-
-
-    <div class="contenedor contenedor-enlaces-nav">
-
-      <div class="btn-departamentos" id="btn-departamentos">
-
-        <p>Todas los <span>Departamentos</span></p>
-        <i class="fas fa-caret-square-down"></i>
-
-      </div>
-      <h1 class="nombre" style="text-align: center;">All Over</h1>
-
-      <div class="enlaces">
-        <a href="#">Promociones </a>
-        <a href="#">Ayuda </a>
-
-      </div>
-    </div>
-
-    <div class="contenedor contenedor-grid">
-      <div class="grid " id="grid">
-        <div class="categorias">
-          <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
-          <h3 class="subtitulo">Categorias</h3>
-
-          <a href="#" data-categoria="computadoras"> Computadoras <i class="fas fa-angle-right"></i></a>
-          <a href="#" data-categoria="telefonos">Telefonos <i class="fas fa-angle-right"></i></a>
-          <a href="#" data-categoria="videojuegos">VideoJuegos <i class="fas fa-angle-right"></i></a>
-          <a href="#" data-categoria="accesorios">Otos <i class="fas fa-angle-right"></i></a>
-
+            <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+            <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
         </div>
 
 
-        <div class="contenedor-subcategorias">
-          <div class="subcategoria " data-categoria="computadoras">
-            <div class="enlaces-subcategoria">
-              <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-              <h3 class="subtitulo">Computadoras</h3>
-              <a href="#">Laptops</a>
-              <a href="#">Escritorio</a>
-              <a href="#">Mac</a>
-              <a href="#">Monitores</a>
-              <a href="#">Componentes</a>
-            </div>
 
-            <div class="banner-subcategoria">
-              <a href="#">
-                <img src="img/tecnologia-banner-1.png" alt="">
-              </a>
-            </div>
 
-            <div class="galeria-subcategoria">
-              <a href="#">
-                <img src="img/tecnologia-galeria-2.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/tecnologia-galeria-3.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/tecnologia-galeria-4.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/tecnologia-galeria-5.png" alt="">
-              </a>
-            </div>
-          </div>
+        <div class="contenedor contenedor-enlaces-nav">
 
-          <div class="subcategoria " data-categoria="telefonos">
-            <div class="enlaces-subcategoria">
-              <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-              <h3 class="subtitulo">Telefonos</h3>
-              <a href="#">Samsung</a>
-              <a href="#">Huawei</a>
-              <a href="#">LG</a>
-              <a href="#">Iphone</a>
+            <div class="btn-departamentos" id="btn-departamentos">
+
+                <p>Todas los <span>Departamentos</span></p>
+                <i class="fas fa-caret-square-down"></i>
 
             </div>
-            <div class="banner-subcategoria">
-              <a href="#">
-                <img src="img/telefonos-1.png" alt="">
-              </a>
-            </div>
+            <h1 class="nombre" style="text-align: center;">All Over</h1>
 
-            <div class="galeria-subcategoria">
-              <a href="#">
-                <img src="img/telefonos-2.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/telefonos-3.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/telefonos-4.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/telefonos-5.png" alt="">
-              </a>
-            </div>
-          </div>
-
-
-          <div class="subcategoria " data-categoria="videojuegos">
-            <div class="enlaces-subcategoria">
-              <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-              <h3 class="subtitulo">VideoJuegos</h3>
-              <a href="#">Consolas</a>
-              <a href="#">Controles</a>
-              <a href="#">Juegos</a>
-              <a href="#">Accesorios</a>
-              <a href="#">Portatiles</a>
+            <div class="enlaces">
+                <a href="#">Promociones </a>
+                <a href="#">Ayuda </a>
 
             </div>
-            <div class="banner-subcategoria">
-              <a href="#">
-                <img src="img/games-1.png" alt="">
-              </a>
-            </div>
-
-            <div class="galeria-subcategoria">
-              <a href="#">
-                <img src="img/games-2.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/games-3.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/games-4.png" alt="">
-              </a>
-              <a href="#">
-                <img src="img/games-5.png" alt="">
-              </a>
-            </div>
-          </div>
-
-
         </div>
 
-      </div>
+        <div class="contenedor contenedor-grid">
+            <div class="grid " id="grid">
+                <div class="categorias">
+                    <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+                    <h3 class="subtitulo">Categorias</h3>
 
-    </div>
-  </nav>
-  <!--   //menu de navegacion -->
+                    <a href="#" data-categoria="computadoras"> Computadoras <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="telefonos">Telefonos <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="videojuegos">VideoJuegos <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="accesorios">Otos <i class="fas fa-angle-right"></i></a>
 
-  <!--   //Contenido de la pagina  -->
+                </div>
 
-  <main>
-    <!--   //banner  -->
-    <section id="banner">
 
-      <div class="container-all">
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria " data-categoria="computadoras">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">Computadoras</h3>
+                            <a href="#">Laptops</a>
+                            <a href="#">Escritorio</a>
+                            <a href="#">Mac</a>
+                            <a href="#">Monitores</a>
+                            <a href="#">Componentes</a>
+                        </div>
 
-        <input type="radio" id="1" name="image-slide" hidden />
-        <input type="radio" id="2" name="image-slide" hidden />
-        <input type="radio" id="3" name="image-slide" hidden />
+                        <div class="banner-subcategoria">
+                            <a href="#">
+                                <img src="img/tecnologia-banner-1.png" alt="">
+                            </a>
+                        </div>
 
-        <div class="slide">
+                        <div class="galeria-subcategoria">
+                            <a href="#">
+                                <img src="img/tecnologia-galeria-2.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/tecnologia-galeria-3.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/tecnologia-galeria-4.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/tecnologia-galeria-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
 
-          <div class="item-slide">
-            <img src="img/img1.jpg">
-            <div class="contenedor">
-              <h2>La mejor pagina para comparar precios</h2>
-              <p>¿Y tu ya encontraste la mejor oferta?</p>
+                    <div class="subcategoria " data-categoria="telefonos">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">Telefonos</h3>
+                            <a href="#">Samsung</a>
+                            <a href="#">Huawei</a>
+                            <a href="#">LG</a>
+                            <a href="#">Iphone</a>
+
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#">
+                                <img src="img/telefonos-1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="galeria-subcategoria">
+                            <a href="#">
+                                <img src="img/telefonos-2.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/telefonos-3.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/telefonos-4.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/telefonos-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="subcategoria " data-categoria="videojuegos">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">VideoJuegos</h3>
+                            <a href="#">Consolas</a>
+                            <a href="#">Controles</a>
+                            <a href="#">Juegos</a>
+                            <a href="#">Accesorios</a>
+                            <a href="#">Portatiles</a>
+
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#">
+                                <img src="img/games-1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="galeria-subcategoria">
+                            <a href="#">
+                                <img src="img/games-2.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/games-3.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/games-4.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/games-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
 
-          </div>
+        </div>
+    </nav>
+    <!--   //menu de navegacion -->
+    <!--   //Contenido de la pagina  -->
 
-          <div class="item-slide">
-          <img src="img/img2.jpg">
-          <div class="contenedor">
-            <h2>La mejor pagina para comparar precios</h2>
-            <p>¿Y tu ya encontraste la mejor oferta?</p>
-          </div>
-          </div>
+    <main>
+        <!--   //banner  -->
+        <section id="banner">
 
-          <div class="item-slide">
-            <img src="img/img3.jpg">
-            <div class="contenedor">
-              <h2>La mejor pagina para comparar precios</h2>
-              <p>¿Y tu ya encontraste la mejor oferta?</p>
+            <div class="container-all">
+
+                <input type="radio" id="1" name="image-slide" hidden />
+                <input type="radio" id="2" name="image-slide" hidden />
+                <input type="radio" id="3" name="image-slide" hidden />
+
+                <div class="slide">
+
+                    <div class="item-slide">
+                        <img src="img/img1.jpg">
+                        <div class="contenedor">
+                            <h2>La mejor pagina para comparar precios</h2>
+                            <p>¿Y tu ya encontraste la mejor oferta?</p>
+                        </div>
+
+                    </div>
+
+                    <div class="item-slide">
+                        <img src="img/img2.jpg">
+                        <div class="contenedor">
+                            <h2>Muchas ofertas en la palma de tu mano</h2>
+                            
+                        </div>
+                    </div>
+
+                    <div class="item-slide">
+                        <img src="img/img3.jpg">
+                        <div class="contenedor">
+                            <h2>Gran variedad de productos </h2>
+                          
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination">
+
+                    <label class="pagination-item" for="1">
+                        <img src="img/banner.jpg">
+                    </label>
+
+                    <label class="pagination-item" for="2">
+                        <img src="img/2.jpg">
+                    </label>
+
+                    <label class="pagination-item" for="3">
+                        <img src="img/3.jpg">
+                    </label>
+
+                </div>
+
             </div>
-          </div>
-
-        </div>
-
-        <div class="pagination">
-
-          <label class="pagination-item" for="1">
-            <img src="img/banner.jpg">
-          </label>
-
-          <label class="pagination-item" for="2">
-            <img src="img/2.jpg">
-          </label>
-
-          <label class="pagination-item" for="3">
-            <img src="img/3.jpg">
-          </label>
-
-        </div>
-
-      </div>
-        </div>
-    </section>
-    <!--   //banner  -->
-<!--   //slider-productos -->
-    <section>
-      <div class="slider-box">
-        <p class="time">New</p>
-        <div Class="img-box">
-          <img src="img/bag-1.png" alt="">
-         </div>
-<p class="detail">Pkay 4 con fifa
-  <a href="#" class="price">Precio-$4000</a>
-</p>
-<div class="cart">
-  <a href="#">Add</a>
-</div>
-      </div>
-
-    </section>
-    <!--   //slider-productos  -->
-  </main>
+            </div>
+        </section>
+        <!--   //banner  -->
+        <!--   //slider-productos -->
+        <section>
 
 
-  <script src="https://kit.fontawesome.com/1c770d1a23.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/slider.js.js"></script>
+            <!-- Swiper -->
+            <div class="heading">
+                <h1> O F E R T A S</h1>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-----slider1---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider2---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider3---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider4---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider5---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider5---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+
+            <!-- Swiper -->
+            <div class="heading">
+                <h1>D E S C U E N T O S  </h1>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-----slider1---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider2---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider3---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider4---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider5---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----slider5---->
+                    <div class="swiper-slide">
+                        <div class="slider-box">
+                            <p class="time">New</p>
+                            <div Class="img-box">
+                                <img src="img/bag-1.png" alt="">
+                            </div>
+                            <p class="detail">
+                                Pkay 4 con fifa
+                                <a href="#" class="price">Precio-$4000</a>
+                            </p>
+                            <div class="cart">
+                                <a href="#">Add</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--   //slider-productos  -->
+    </main>
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/1c770d1a23.js"></script>
+    <script src="js/main.js"></script>
+
+
 </body>
+<script src="js/Swiper.min.js"></script>
+<script src="js/script.js"></script>
 
 </html>
