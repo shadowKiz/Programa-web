@@ -1,87 +1,168 @@
-const btnDepartamentos = document.getElementById('btn-departamentos'),
-	  btnCerrarMenu = document.getElementById('btn-menu-cerrar'),
-	  grid = document.getElementById('grid'),
-	  contenedorEnlacesNav = document.querySelector('#menu .contenedor-enlaces-nav'),
-	  contenedorSubCategorias = document.querySelector('#grid .contenedor-subcategorias'),
-	  esDispositivoMovil = () => window.innerWidth <= 800;
+(function($) {
+	"use strict"
 
-btnDepartamentos.addEventListener('mouseover', () => {
-	if(!esDispositivoMovil()){
-		grid.classList.add('activo');
-	}
-});
-
-grid.addEventListener('mouseleave', () => {
-	if(!esDispositivoMovil()){
-		grid.classList.remove('activo');
-	}
-});
-
-document.querySelectorAll('#menu .categorias a').forEach((elemento) => {
-	elemento.addEventListener('mouseenter', (e) => {
-		if(!esDispositivoMovil()){
-			document.querySelectorAll('#menu .subcategoria').forEach((categoria) => {
-				categoria.classList.remove('activo');
-				if(categoria.dataset.categoria == e.target.dataset.categoria){
-					categoria.classList.add('activo');
-				}
-			});
-		};
-	});
-});
-
-// EventListeners para dispositivo movil.
-document.querySelector('#btn-menu-barras').addEventListener('click', (e) => {
-	e.preventDefault();
-	if(contenedorEnlacesNav.classList.contains('activo')){
-		contenedorEnlacesNav.classList.remove('activo');
-		document.querySelector('body').style.overflow = 'visible';
-	} else {
-		contenedorEnlacesNav.classList.add('activo');
-		document.querySelector('body').style.overflow = 'hidden';
-	}
-});
-
-// Click en boton de todos los departamentos (Para version movil).
-btnDepartamentos.addEventListener('click', (e) => {
-	e.preventDefault();
-	grid.classList.add('activo');
-	btnCerrarMenu.classList.add('activo');
-});
-
-// Boton de regresar en el menu de categorias
-document.querySelector('#grid .categorias .btn-regresar').addEventListener('click', (e) => {
-	e.preventDefault();
-	grid.classList.remove('activo');
-	btnCerrarMenu.classList.remove('activo');
-});
-
-document.querySelectorAll('#menu .categorias a').forEach((elemento) => {
-	elemento.addEventListener('click', (e) => {
-		if(esDispositivoMovil()){
-			contenedorSubCategorias.classList.add('activo');
-			document.querySelectorAll('#menu .subcategoria').forEach((categoria) => {
-				categoria.classList.remove('activo');
-				if(categoria.dataset.categoria == e.target.dataset.categoria){
-					categoria.classList.add('activo');
-				}
-			});
-		}
-	});
-});
-
-// Boton de regresar en el menu de categorias
-document.querySelectorAll('#grid .contenedor-subcategorias .btn-regresar').forEach((boton) => {
-	boton.addEventListener('click', (e) => {
+	// Mobile Nav toggle
+	$('.menu-toggle > a').on('click', function (e) {
 		e.preventDefault();
-		contenedorSubCategorias.classList.remove('activo');
-	});
-});
+		$('#responsive-nav').toggleClass('active');
+	})
 
-btnCerrarMenu.addEventListener('click', (e)=> {
-	e.preventDefault();
-	document.querySelectorAll('#menu .activo').forEach((elemento) => {
-		elemento.classList.remove('activo');
+	// Fix cart dropdown from closing
+	$('.cart-dropdown').on('click', function (e) {
+		e.stopPropagation();
 	});
-	document.querySelector('body').style.overflow = 'visible';
-});
+
+	/////////////////////////////////////////
+
+	// Products Slick
+	$('.products-slick').each(function() {
+		var $this = $(this),
+				$nav = $this.attr('data-nav');
+
+		$this.slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			infinite: true,
+			speed: 300,
+			dots: false,
+			arrows: true,
+			appendArrows: $nav ? $nav : false,
+			responsive: [{
+	        breakpoint: 991,
+	        settings: {
+	          slidesToShow: 2,
+	          slidesToScroll: 1,
+	        }
+	      },
+	      {
+	        breakpoint: 480,
+	        settings: {
+	          slidesToShow: 1,
+	          slidesToScroll: 1,
+	        }
+	      },
+	    ]
+		});
+	});
+
+	// Products Widget Slick
+	$('.products-widget-slick').each(function() {
+		var $this = $(this),
+				$nav = $this.attr('data-nav');
+
+		$this.slick({
+			infinite: true,
+			autoplay: true,
+			speed: 300,
+			dots: false,
+			arrows: true,
+			appendArrows: $nav ? $nav : false,
+		});
+	});
+
+	/////////////////////////////////////////
+
+	// Product Main img Slick
+	$('#product-main-img').slick({
+    infinite: true,
+    speed: 300,
+    dots: false,
+    arrows: true,
+    fade: true,
+    asNavFor: '#product-imgs',
+  });
+
+	// Product imgs Slick
+  $('#product-imgs').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    centerMode: true,
+    focusOnSelect: true,
+		centerPadding: 0,
+		vertical: true,
+    asNavFor: '#product-main-img',
+		responsive: [{
+        breakpoint: 991,
+        settings: {
+					vertical: false,
+					arrows: false,
+					dots: true,
+        }
+      },
+    ]
+  });
+
+	// Product img zoom
+	var zoomMainProduct = document.getElementById('product-main-img');
+	if (zoomMainProduct) {
+		$('#product-main-img .product-preview').zoom();
+	}
+
+	/////////////////////////////////////////
+
+	// Input number
+	$('.input-number').each(function() {
+		var $this = $(this),
+		$input = $this.find('input[type="number"]'),
+		up = $this.find('.qty-up'),
+		down = $this.find('.qty-down');
+
+		down.on('click', function () {
+			var value = parseInt($input.val()) - 1;
+			value = value < 1 ? 1 : value;
+			$input.val(value);
+			$input.change();
+			updatePriceSlider($this , value)
+		})
+
+		up.on('click', function () {
+			var value = parseInt($input.val()) + 1;
+			$input.val(value);
+			$input.change();
+			updatePriceSlider($this , value)
+		})
+	});
+
+	var priceInputMax = document.getElementById('price-max'),
+			priceInputMin = document.getElementById('price-min');
+
+	priceInputMax.addEventListener('change', function(){
+		updatePriceSlider($(this).parent() , this.value)
+	});
+
+	priceInputMin.addEventListener('change', function(){
+		updatePriceSlider($(this).parent() , this.value)
+	});
+
+	function updatePriceSlider(elem , value) {
+		if ( elem.hasClass('price-min') ) {
+			console.log('min')
+			priceSlider.noUiSlider.set([value, null]);
+		} else if ( elem.hasClass('price-max')) {
+			console.log('max')
+			priceSlider.noUiSlider.set([null, value]);
+		}
+	}
+
+	// Price Slider
+	var priceSlider = document.getElementById('price-slider');
+	if (priceSlider) {
+		noUiSlider.create(priceSlider, {
+			start: [1, 999],
+			connect: true,
+			step: 1,
+			range: {
+				'min': 1,
+				'max': 999
+			}
+		});
+
+		priceSlider.noUiSlider.on('update', function( values, handle ) {
+			var value = values[handle];
+			handle ? priceInputMax.value = value : priceInputMin.value = value
+		});
+	}
+
+})(jQuery);

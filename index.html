@@ -1,476 +1,648 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-    <link href="css/Menu-bar.css" rel="stylesheet" type="text/css">
-    <link href="css/banner.css" rel="stylesheet" type="text/css">
-    <link href="css/sle.css" rel="stylesheet" type="text/css">
-    <link href="css/slider-productos.css" rel="stylesheet" type="text/css">
-    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
-
-
-
-    <title>ALL Over</title>
-</head>
-
-<body>
-    <!--   //menu de navegacion -->
-    <nav class="menu" id="menu">
-        <div class="contenedor contenedor-botones-menu">
-
-            <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
-            <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
-        </div>
-
-
-
-
-        <div class="contenedor contenedor-enlaces-nav">
-
-            <div class="btn-departamentos" id="btn-departamentos">
-
-                <p>Todas los <span>Departamentos</span></p>
-                <i class="fas fa-caret-square-down"></i>
-
-            </div>
-            <h1 class="nombre" style="text-align: center;">All Over</h1>
-
-            <div class="enlaces">
-                <a href="#">Promociones </a>
-                <a href="#">Ayuda </a>
-
-            </div>
-        </div>
-
-        <div class="contenedor contenedor-grid">
-            <div class="grid " id="grid">
-                <div class="categorias">
-                    <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
-                    <h3 class="subtitulo">Categorias</h3>
-
-                    <a href="#" data-categoria="computadoras"> Computadoras <i class="fas fa-angle-right"></i></a>
-                    <a href="#" data-categoria="telefonos">Telefonos <i class="fas fa-angle-right"></i></a>
-                    <a href="#" data-categoria="videojuegos">VideoJuegos <i class="fas fa-angle-right"></i></a>
-                    <a href="#" data-categoria="accesorios">Otos <i class="fas fa-angle-right"></i></a>
-
-                </div>
-
-
-                <div class="contenedor-subcategorias">
-                    <div class="subcategoria " data-categoria="computadoras">
-                        <div class="enlaces-subcategoria">
-                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-                            <h3 class="subtitulo">Computadoras</h3>
-                            <a href="#">Laptops</a>
-                            <a href="#">Escritorio</a>
-                            <a href="#">Mac</a>
-                            <a href="#">Monitores</a>
-                            <a href="#">Componentes</a>
-                        </div>
-
-                        <div class="banner-subcategoria">
-                            <a href="#">
-                                <img src="img/tecnologia-banner-1.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="galeria-subcategoria">
-                            <a href="#">
-                                <img src="img/tecnologia-galeria-2.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/tecnologia-galeria-3.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/tecnologia-galeria-4.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/tecnologia-galeria-5.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="subcategoria " data-categoria="telefonos">
-                        <div class="enlaces-subcategoria">
-                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-                            <h3 class="subtitulo">Telefonos</h3>
-                            <a href="#">Samsung</a>
-                            <a href="#">Huawei</a>
-                            <a href="#">LG</a>
-                            <a href="#">Iphone</a>
-
-                        </div>
-                        <div class="banner-subcategoria">
-                            <a href="#">
-                                <img src="img/telefonos-1.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="galeria-subcategoria">
-                            <a href="#">
-                                <img src="img/telefonos-2.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/telefonos-3.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/telefonos-4.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/telefonos-5.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="subcategoria " data-categoria="videojuegos">
-                        <div class="enlaces-subcategoria">
-                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-                            <h3 class="subtitulo">VideoJuegos</h3>
-                            <a href="#">Consolas</a>
-                            <a href="#">Controles</a>
-                            <a href="#">Juegos</a>
-                            <a href="#">Accesorios</a>
-                            <a href="#">Portatiles</a>
-
-                        </div>
-                        <div class="banner-subcategoria">
-                            <a href="#">
-                                <img src="img/games-1.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="galeria-subcategoria">
-                            <a href="#">
-                                <img src="img/games-2.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/games-3.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/games-4.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/games-5.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-    </nav>
-    <!--   //menu de navegacion -->
-    <!--   //Contenido de la pagina  -->
-
-    <main>
-        <!--   //banner  -->
-        <section id="banner">
-
-            <div class="container-all">
-
-                <input type="radio" id="1" name="image-slide" hidden />
-                <input type="radio" id="2" name="image-slide" hidden />
-                <input type="radio" id="3" name="image-slide" hidden />
-
-                <div class="slide">
-
-                    <div class="item-slide">
-                        <img src="img/img1.jpg">
-                        <div class="contenedor">
-                            <h2>La mejor pagina para comparar precios</h2>
-                            <p>¿Y tu ya encontraste la mejor oferta?</p>
-                        </div>
-
-                    </div>
-
-                    <div class="item-slide">
-                        <img src="img/img2.jpg">
-                        <div class="contenedor">
-                            <h2>Muchas ofertas en la palma de tu mano</h2>
-                            
-                        </div>
-                    </div>
-
-                    <div class="item-slide">
-                        <img src="img/img3.jpg">
-                        <div class="contenedor">
-                            <h2>Gran variedad de productos </h2>
-                          
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="pagination">
-
-                    <label class="pagination-item" for="1">
-                        <img src="img/banner.jpg">
-                    </label>
-
-                    <label class="pagination-item" for="2">
-                        <img src="img/2.jpg">
-                    </label>
-
-                    <label class="pagination-item" for="3">
-                        <img src="img/3.jpg">
-                    </label>
-
-                </div>
-
-            </div>
-            </div>
-        </section>
-        <!--   //banner  -->
-        <!--   //slider-productos -->
-        <section>
-
-
-            <!-- Swiper -->
-            <div class="heading">
-                <h1> O F E R T A S</h1>
-            </div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!-----slider1---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider2---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider3---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider4---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider5---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider5---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <section>
-
-            <!-- Swiper -->
-            <div class="heading">
-                <h1>D E S C U E N T O S  </h1>
-            </div>
-
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!-----slider1---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider2---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider3---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider4---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider5---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-----slider5---->
-                    <div class="swiper-slide">
-                        <div class="slider-box">
-                            <p class="time">New</p>
-                            <div Class="img-box">
-                                <img src="img/bag-1.png" alt="">
-                            </div>
-                            <p class="detail">
-                                Pkay 4 con fifa
-                                <a href="#" class="price">Precio-$4000</a>
-                            </p>
-                            <div class="cart">
-                                <a href="#">Add</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--   //slider-productos  -->
-    </main>
-
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-
-
-    <script src="https://kit.fontawesome.com/1c770d1a23.js"></script>
-    <script src="js/main.js"></script>
-
-
-</body>
-<script src="js/Swiper.min.js"></script>
-<script src="js/script.js"></script>
-
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>All Over</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="css/menu.css"/>
+       <!-- Icon -->
+		<link rel="icon" href="img/logo pagina.ico">
+
+	
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			
+
+			<!-- MAIN HEADER -->
+			<nav>
+				<ul>
+					<div class="col-md-3">
+						<div class="header-logo">
+							<a href="#" class="logo">
+								<img src="./img/allover.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				  
+				  <div class="items">
+				
+				  </div>
+				  <li class="search-icon">
+					<input type="search" placeholder="Search">
+					<label class="icon">
+					  <span class="fas fa-search"></span>
+					</label>
+				  </li>
+				</ul>
+			  </nav>
+			  
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav class="menu" id="menu">
+			<div class="contenedor contenedor-botones-menu">
+		
+			  <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i> <span>Menu</span></button>
+			  <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+			</div>
+		
+		
+		
+		
+			<div class="contenedor contenedor-enlaces-nav">
+		
+			  <div class="btn-departamentos" id="btn-departamentos">
+		
+				<p>Todas los <span>Departamentos</span></p>
+				<i class="fas fa-caret-square-down"></i>
+		
+			  </div>
+		
+			  
+
+			
+			
+			</div>
+		
+			<div class="contenedor contenedor-grid">
+			  <div class="grid " id="grid">
+				<div class="categorias">
+				  <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+				  <h3 class="subtitulo">Categorias</h3>
+		
+				  <a href="#" data-categoria="computadoras"> Computadoras <i class="fas fa-angle-right"></i></a>
+				  <a href="#" data-categoria="telefonos">Telefonos <i class="fas fa-angle-right"></i></a>
+				  <a href="#" data-categoria="videojuegos">VideoJuegos <i class="fas fa-angle-right"></i></a>
+				  <a href="#" data-categoria="accesorios">Otos <i class="fas fa-angle-right"></i></a>
+		
+				</div>
+		
+		
+				<div class="contenedor-subcategorias">
+				  <div class="subcategoria " data-categoria="computadoras">
+					<div class="enlaces-subcategoria">
+					  <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+					  <h3 class="subtitulo">Computadoras</h3>
+					  <a href="#">Laptops</a>
+					  <a href="#">Escritorio</a>
+					  <a href="#">Mac</a>
+					  <a href="#">Monitores</a>
+					  <a href="#">Componentes</a>
+					</div>
+		
+					<div class="enlaces-subcategoria">
+						<h3 class="subtitulo">Computadoras</h3>
+						<a href="#">Laptops</a>
+						<a href="#">Escritorio</a>
+						<a href="#">Mac</a>
+						<a href="#">Monitores</a>
+						<a href="#">Componentes</a>
+					  </div>
+		
+					<div class="enlaces-subcategoria">
+						
+						<h3 class="subtitulo">Computadoras</h3>
+						<a href="#">Laptops</a>
+						<a href="#">Escritorio</a>
+						<a href="#">Mac</a>
+						<a href="#">Monitores</a>
+						<a href="#">Componentes</a>
+					  </div>
+				  </div>
+		
+				  <div class="subcategoria " data-categoria="telefonos">
+					<div class="enlaces-subcategoria">
+					  <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+					  <h3 class="subtitulo">Telefonos</h3>
+					  <a href="#">Samsung</a>
+					  <a href="#">Huawei</a>
+					  <a href="#">LG</a>
+					  <a href="#">Iphone</a>
+		
+					</div>
+	
+					<div class="enlaces-subcategoria">
+						<h3 class="subtitulo">Telefonos</h3>
+						<a href="#">Laptops</a>
+						<a href="#">Escritorio</a>
+						<a href="#">Mac</a>
+						<a href="#">Monitores</a>
+						<a href="#">Componentes</a>
+					  </div>
+		
+					  <div class="enlaces-subcategoria">
+						<h3 class="subtitulo">Accesorios</h3>
+						<a href="#">Laptops</a>
+						<a href="#">Escritorio</a>
+						<a href="#">Mac</a>
+						<a href="#">Monitores</a>
+						<a href="#">Componentes</a>
+					  </div>
+				  </div>
+		
+		
+				  <div class="subcategoria " data-categoria="videojuegos">
+					<div class="enlaces-subcategoria">
+					  <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+					  <h3 class="subtitulo">VideoJuegos</h3>
+					  <a href="#">Consolas</a>
+					  <a href="#">Controles</a>
+					  <a href="#">Juegos</a>
+					  <a href="#">Accesorios</a>
+					  <a href="#">Portatiles</a>
+		
+					</div>
+	
+					<div class="enlaces-subcategoria">
+						<h3 class="subtitulo">Computadoras</h3>
+						<a href="#">Laptops</a>
+						<a href="#">Escritorio</a>
+						<a href="#">Mac</a>
+						<a href="#">Monitores</a>
+						<a href="#">Componentes</a>
+					  </div>
+		
+					  <div class="enlaces-subcategoria">
+						<h3 class="subtitulo">Computadoras</h3>
+						<a href="#">Laptops</a>
+						<a href="#">Escritorio</a>
+						<a href="#">Mac</a>
+						<a href="#">Monitores</a>
+						<a href="#">Componentes</a>
+					  </div>
+				  </div>
+		
+		
+				</div>
+		
+			  </div>
+		
+			</div>
+		  </nav>
+		<!-- /NAVIGATION -->
+
+		
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Nuevos Productos </h3>
+							
+						</div>
+					</div>
+					<!-- /section title -->
+
+					<!-- Products tab & slick -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab1" class="tab-pane active">
+									<div class="products-slick" data-nav="#slick-nav-1">
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://http2.mlstatic.com/celular-samsung-galaxy-s20-plus-128gb-ram-8gb-64mp-nuevo-D_NQ_NP_756860-MLM40975689320_032020-O.webp" height="200px" alt="">
+												<div class="product-label">
+												
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Telefonos y Celulares</p>
+												<h3 class="product-name"><a  >Celular Samsung Galaxy S20+ Plus</a></h3>
+												<h4 class="product-price">$24,999 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://articulo.mercadolibre.com.mx/MLM-760688196-celular-samsung-galaxy-s20-plus-128gb-ram-8gb-64mp-nuevo-_JM?searchVariation=51586061571&quantity=1&variation=51586061571#searchVariation=51586061571&position=3&type=item&tracking_id=82a0bbb4-720d-47af-aaba-6ee10939f9a6" target="_blank">Mercado Libre</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">128gb Ram 8gb 64mp Nuevo</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>
+										
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://images-na.ssl-images-amazon.com/images/I/6185uQ7UCVL._AC_SX522_.jpg"  alt="">
+												<div class="product-label">
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Telefonos y Celulares</p>
+												<h3 class="product-name"><a href="#">SAMSUNG Galaxy S20 Plus</a></h3>
+												<h4 class="product-price">$20,499.00 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.amazon.com.mx/SAMSUNG-Galaxy-128GB-Pantalla-Always/dp/B085F3VMT8/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Celular+Samsung+Galaxy+S20%2B+Plus&qid=1588455824&sr=8-3" target="_blank">Amazon</a></p>
+												</div>
+												<div class="product-btns">
+													
+													<p class="product-category">128GB/8GB RAM, Pantalla HDR10 Always One </p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>									
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pm/images/product-images/img_large/00088727639863l.jpg"  alt="">
+												<div class="product-label">
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Telefonos y Celulares </p>
+												<h3 class="product-name"><a href="#"> Samsung Galaxy S20 Plus</a></h3>
+												<h4 class="product-price">$25,999.00 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.walmart.com.mx/celulares/smartphones/celulares-desbloqueados/smartphone-samsung-galaxy-s20-plus-128gb-cosmic-gris-desbloqueado_00088727639863" target="_blank">Walmart</a></p>
+												</div>
+												<div class="product-btns">
+													
+													<p class="product-category">128gb Cosmic Gris Desbloqueado </p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://i.ebayimg.com/images/g/RvAAAOSwwoleZ8Lh/s-l1600.png" height="200px"  alt="">
+												<div class="product-label">
+													<span class="new">NEW</span>
+													</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Telefonos y Celulares</p>
+												<h3 class="product-name"><a href="#">Samsung Galaxy s20+ plus</a></h3>
+												<h4 class="product-price">$22 267.13</h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.ebay.com/itm/Samsung-Galaxy-S20-Plus-SM-G985F-128GB-Cosmic-Gray-Dual-SIM-NEU-OVP/283810570116?_trkparms=aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D225086%26meid%3Dab5cd4beee2145e79370379653011845%26pid%3D100012%26rk%3D3%26rkt%3D12%26sd%3D373037080934%26itm%3D283810570116%26pmt%3D1%26noa%3D0%26pg%3D2047675%26algv%3DSimplAMLv5PairwiseWeb%26brand%3DSamsung&_trksid=p2047675.c100012.m1985" target="_blank">ebay</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">28gb-Cosmic nuevo embalaje original</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"> Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://ss632.liverpool.com.mx/xl/1095351871.jpg"  alt="">
+												<div class="product-label">
+													<span class="new">NEW</span>
+													</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Telefonos y Celulares </p>
+												<h3 class="product-name"><a href="#"> Samsung Galaxy S20 Plus</a></h3>
+												<h4 class="product-price">$25,849 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.liverpool.com.mx/tienda/pdp/smartphone-samsung-galaxy-s20-plus-telcel-gris/1095351871" target="_blank">Liverpool</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">Almacenamiento: 128 GB  RAM: 8 G</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+									</div>
+									<div id="slick-nav-1" class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- Products tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- HOT DEAL SECTION -->
+		<div id="hot-deal" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							
+							<h2 class="text-uppercase">Todo Lo que Buscas   </h2>
+							<p>a Precios increibles </p>
+							<a class="primary-btn cta-btn" href="#">Ver Productos</a>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /HOT DEAL SECTION -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Mas Vistos</h3>
+							
+						</div>
+					</div>
+					<!-- /section title -->
+
+					<!-- Products tab & slick -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab2" class="tab-pane fade in active">
+									<div class="products-slick" data-nav="#slick-nav-2">
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://http2.mlstatic.com/laptop-intel-dual-core-4gb-ram-500gb-w10-vorago-alpha-hdmi-D_NQ_NP_775755-MLM32713107168_102019-F.webp" alt="" height="200px">
+												<div class="product-label">
+													
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Computadoras | Laptops</p>
+												<h3 class="product-name"><a >Laptop Intel Dual Core</a></h3>
+												<h4 class="product-price">$5,789 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://articulo.mercadolibre.com.mx/MLM-697259673-laptop-intel-dual-core-4gb-ram-500gb-w10-vorago-alpha-hdmi-_JM?searchVariation=40106248276&quantity=1&variation=40106248276#searchVariation=40106248276&position=1&type=item&tracking_id=d99c2452-4453-4127-ac46-230aaf4c4a75" target="_blank">Mercado Libre</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">4gb Ram 500gb W10 Vorago Alpha Hdmi</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://sm.ign.com/ign_fr/screenshot/default/xboxones-1tbconsole-roblox-us-can-fanl-rgb-1200x1200_wkeg.jpg" alt="" height="200px">
+												<div class="product-label">
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">VideoJuegos | Consolas</p>
+												<h3 class="product-name"><a href="#">Consola Xbox One S 1TB </a></h3>
+												<h4 class="product-price">$5,999 <del class="product-old-price">$7,499</del></h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.amazon.com.mx/dp/B086QRM64N/ref=s9_acsd_al_bw_c2_x_2_i?pf_rd_m=A3TO6F13CSVUA4&pf_rd_s=merchandised-search-11&pf_rd_r=C3P3CBHJ7T6P42DTJVS4&pf_rd_t=101&pf_rd_p=3429925c-0617-4bb6-be44-6f603323855c&pf_rd_i=9482640011" target="_blank">Amazon</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">Roblox - Bundle Limited Edition</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"> Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://ae01.alicdn.com/kf/H9cb9b636472d42d4ba798e13c3c30694M/2020-CHUWI-HeroBook-Pro-Intel-N4000-Dual-Core-Windows-10-port-til-de-14-1-pulgadas.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Computadoras | Laptops</p>
+												<h3 class="product-name"><a href="#">CHUWI HeroBook Pro Intel N4000</a></h3>
+												<h4 class="product-price">$7,225.56 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://es.aliexpress.com/item/4000670411417.html?spm=a2g0o.productlist.0.0.4f97271drpp0Je&algo_pvid=b8bdaa49-f29b-43b8-9d2d-31d9838a0d97&algo_expid=b8bdaa49-f29b-43b8-9d2d-31d9838a0d97-2&btsid=0ab6f83115870947275117128e3afa&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_" target="_blank">AliExpress</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">Dual Core Windows 10 portátil de 14,1 pulgadas FHD IPS pantalla 8GB</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/1p/images/product-images/img_large/00088984215934l.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">VideoJuegos | Controles</p>
+												<h3 class="product-name"><a href="#">Control Inalámbrico Xbox One</a></h3>
+												<h4 class="product-price">$1,399 </h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.walmart.com.mx/videojuegos/xbox-one/accesorios/control-inalambrico-xbox-one-black-1-pza_00088984215934" target="_blank">Walmart</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">Control Inalámbrico Xbox One Black 1 pza</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="https://ss632.liverpool.com.mx/xl/1091525387.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Telefonos | Accesorios</p>
+												<h3 class="product-name"><a href="#">AirPods Pro blancos</a></h3>
+												<h4 class="product-price">$5,499</h4>
+												<div class="product-rating">
+													<p><a class="primero" href="https://www.liverpool.com.mx/tienda/pdp/airpods-pro-blancos/1091525387" target="_blank">Liverpool</a></p>
+												</div>
+												<div class="product-btns">
+													<p class="product-category">APPLE Tipo De Audífonos: In-Ear Color: Blanco</p>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn">Ver Detalles</button>
+											</div>
+										</div>
+										<!-- /product -->
+									</div>
+									<div id="slick-nav-2" class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- /Products tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		
+
+		
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Acerca de ALL OVER</h3>
+								<p>El objetivo de ALL OVER es que los usuarios tengan una mejor experiencia en la compa en linea y comparen precios para elegir la mejor opcion </p>
+							
+							</div>
+							<p><a href="#">Terminos y condiciones</a></p>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categories</h3>
+								<ul class="footer-links">
+									<li><a href="#">Computadoras</a></li>
+									<li><a href="#">Videojuegos</a></li>
+									<li><a href="#">Telefonos</a></li>
+								
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Service</h3>
+								<ul class="footer-links">
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">View Cart</a></li>
+									<li><a href="#">Wishlist</a></li>
+									<li><a href="#">Track My Order</a></li>
+									<li><a href="#">Help</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							
+							<span class="copyright">
+								
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  by <a href="https://colorlib.com" target="_blank">ShadowKiz</a>
+							
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/busca.js"></script>
+		<script src="https://kit.fontawesome.com/1c770d1a23.js"></script>
+		
+
+
+	</body>
 </html>
